@@ -1,0 +1,159 @@
+.active {
+	position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+.active:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 4px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.active:hover:after,
+.active:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.active {
+	color: green;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#download {
+
+background-color: #3ACB2D;
+
+border: none;
+
+color: white;
+
+padding: 12px 30px !important;
+
+font-size: 16px !important;
+
+cursor: pointer;
+
+}
+
+#download:hover {
+
+background-color: #36D727 !important; /*#ff4b4b*/
+
+}
+
+#download:active, #download:focus {
+
+outline-color: #d90202;
+
+}
+
+#download::-moz-focus-inner {
+
+outline-color: #d90202;
+
+}
+
+.danni {
+    color: blue;
+}
+
+.PanelsDownloads {
+   overflow: hidden;
+  height: 300px;
+  width: 500px;
+  background-color: #333;
+}
+
+#textdonwloads {
+	color: white;
+}
+
+#textdonwloads:hover {
+	transition: 0.5s;
+	color: #BFBFBE;
+}
+
+#downloadsDizain {
+	color: green;
+}
+
+#downloadsDizain:hover {
+	color: lime;
+	transition: 0.5s;
+}
+
+#Bgg {
+	color: white;
+}
+
+#Bgg:hover {
+	color: #1AC46C;
+	transition: 0.5s;
+}
+
+.PanelsNovigatione {
+	overflow: hidden;
+  height: 190px;
+  width: 225px;
+  background-color: #333;
+}
+
+.NovigationeDownloads {
+	text-decoration: none;
+}
